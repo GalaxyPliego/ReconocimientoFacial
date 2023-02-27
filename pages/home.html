@@ -10,12 +10,35 @@
     <!--Style-->
     <link rel="stylesheet" href="../assets/styles/home.css" />
     <link rel="stylesheet" href="../assets/styles/global.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Facial Recognition</title>
+    <title>Home</title>
 </head>
 <body>
     <div class="container">
-        asdf
+        <div class="header">
+            <div class="btn__menu">
+                <!-- menu hamburguesa con opcion de cerrar sesión -->
+                <i id="btnOpenMenu" class='bx bx-menu bx-md'></i>
+            </div>
+            <div id="menu" class="menu">
+                <i id="btnCloseMenu" class='bx bx-x icon__x'></i>
+                <a href="../index.html">Cerrar sesión</a>
+            </div>
+            <img class="header__logo" src="../assets/img/logoFaceR.png" alt="">
+        </div>
+        <div class="container__buttons">
+            <a class="btn__registrar buttons" href="./register.html">
+                <img src="../assets/img/register.png" alt="" class="icon-home"><br> Registrar usuario
+            </a>
+            <a class="btn__scanear buttons" href="./scaner.html">
+                <img src="../assets/img/faceScan.png" alt="" class="icon-home"><br> Escanear
+            </a>
+        </div>
+
+
     </div>
+    <script src="../assets/js/global.js"></script>
 </body>
 </html>
