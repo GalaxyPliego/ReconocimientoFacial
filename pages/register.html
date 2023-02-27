@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== CSS ===============-->
+    <!--NORMALICE-->
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <!--Style-->
+    <link rel="stylesheet" href="../assets/styles/register.css" />
+    <link rel="stylesheet" href="../assets/styles/global.css" />
+
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="header__logo" src="../assets/img/logoFaceR.png" alt="">
+        </div>
+        <div class="register__option">
+            <p id="btnAlumno" class="txt__alumno">Alumno</p>
+            <p id="btnUser" class="txt__usuario">Usuario</p>
+        </div>
+        <div class="container__form">
+            <!-- ALUMNO FORM -->
+            <form id="formUser" class="form__register" action="./pages/home.html">
+                <div class="content__input--email content__input">
+                    <input class="input__matricula" type="text" name="matricula" id="matricula" placeholder="Matrícula" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__name" type="text" name="name" id="name" placeholder="Nombre" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__apellido" type="text" name="apellido" id="apellido" placeholder="Apellidos" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__email" type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="content__btn--register">
+                    <button class="btn__register btn__primary" type="submit">Registrar</button>
+                </div>
+            </form>
+            <!-- USUARIO FORM -->
+            <form id="formAlumno" class="form__register" action="./pages/home.html">
+                <div class="content__input--email content__input">
+                    <input class="input__matricula" type="text" name="matricula" id="matricula" placeholder="Matrícula" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__name" type="text" name="name" id="name" placeholder="Nombre" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__apellido" type="text" name="apellido" id="apellido" placeholder="Apellidos" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__email" type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="content__input--email content__input">
+                    <input class="input__email" type="email" name="email" id="email" placeholder="usuario" />
+                </div>
+                <div class="content__btn--register">
+                    <button class="btn__register btn__primary" type="submit">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

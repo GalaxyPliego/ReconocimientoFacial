@@ -1,0 +1,125 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /*
+        Amarillo: hsl(36, 100%, 63%)
+        Blue-light: hsl(190, 100%, 53%)
+        Blue: hsl(242, 68%, 18%)
+  */
+    --first-hue: 36;
+    --first-sat: 100%;
+    --first-lig: 63%;
+    --second-hue: 242;
+    --second-sat: 68%;
+    --second-lig: 18%;
+    --third-hue: 190;
+    --third-sat: 100%;
+    --third-lig: 53%;
+    --first-color: hsl(var(--first-hue), var(--first-sat), var(--first-lig));
+    --first-color-alt: hsl(var(--first-hue), var(--first-sat), 50%); /* -4% */
+    --second-color: hsl(var(--second-hue), var(--second-sat), var(--second-lig));
+    --second-color-alt: hsl(var(--second-hue), var(--second-sat), 14%); /* -4% */
+    --white-color: #fff;
+    --title-color: hsl(var(--second-hue), 15%, 95%);
+    --text-color: hsl(var(--second-hue), 8%, 90%);
+    --text-color-light: hsl(var(--second-hue), 4%, 55%);
+    --body-color: var(--second-color);
+    --container-color: hsla(100, 0%, 100%, 0.05);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 1.75rem; /* 28px */
+  --h1-font-size: 1.5rem; /* 24px */
+  --h2-font-size: 1.25rem; /* 20px */
+  --h3-font-size: 1rem; /* 16px */
+  --normal-font-size: .938rem; /* 15px */
+  --small-font-size: .813rem; /* 13px */
+  --smaller-font-size: .75rem; /* 12px */
+  --tiny-font-size: .625rem;  /* 10px */
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+#formUser {
+  display: none;
+}
+/* Media query Responsive para cuando la pantalla es pequeña de tamaño de celulares promedio */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: .75rem;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .header__logo {
+      width: 3rem;
+    }
+    .register__option {
+      display: flex;
+      justify-content: space-around;
+      background-color: var(--container-color);
+      padding: .3rem;
+      border-radius: 10rem;
+      margin: 1.5rem 0;
+    }
+    .txt__alumno, .txt__usuario {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      border-radius: 10rem;
+      padding: .3rem;
+      cursor: pointer;
+    }
+    .txt__alumno:hover {
+      background-color: var(--body-color);
+    }
+    .txt__usuario:hover {
+      background-color: var(--body-color);
+    }
+
+    .content__input {
+      margin-bottom: 1rem;
+    }
+    .content__btn--register {
+      position: absolute;
+      width: 100%;
+      padding-right: 1.5rem;
+      bottom: 3rem;
+  }
+}
+@media screen and (min-width: 600px) {
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+    
+    
+}
